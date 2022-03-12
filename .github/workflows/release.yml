@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v[0-9]+\\.[0-9]+\\.[0-9]+"
+
+env:
+  BEHAVIOR_PACK: ebi-behavior-pack.zip
+  RESOURCE_PACK: ebi-resource-pack.zip
+
+jobs:
+  release:
+    name: Release
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Create a new release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Zip behavior and resource packs
+        run: |
+          zip -r ${{ env.BEHAVIOR_PACK }} . -i "ebi-behavior-pack/*"
+          zip -r ${{ env.RESOURCE_PACK }} . -i "ebi-resource-pack/*"
+      - name: Upload zipped behavior pack
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: "./${{ env.BEHAVIOR_PACK }}"
+          asset_name: ${{ env.BEHAVIOR_PACK }}
+          asset_content_type: application/zip
+      - name: Upload zipped resource pack
+        id: upload-release-asset2
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: "./${{ env.RESOURCE_PACK }}"
+          asset_name: ${{ env.RESOURCE_PACK }}
+          asset_content_type: application/zip
