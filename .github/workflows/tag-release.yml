@@ -1,4 +1,4 @@
-name: Release
+name: Tag Release
 
 on:
   push:
@@ -11,7 +11,7 @@ env:
 
 jobs:
   release:
-    name: Release
+    name: Tag Release
     runs-on: macos-latest
     steps:
       - name: Checkout
