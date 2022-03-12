@@ -2,7 +2,7 @@
 <p align='center'><img src="https://user-images.githubusercontent.com/100505058/158007609-a9faa758-0884-43cc-bb26-1c14dae814d1.PNG" width="64" /></p>
 <p align='center'>マインクラフトの海でエビと戯れよう！</p>
 
-## 機能
+## エビの機能
 
 - [x] スポーンエッグからスポーン
 - [x] 海中で自然スポーン
