@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "マインクラフトの海でエビと戯れよう！",
+        "name": "エビ リソース パック",
+        "uuid": "a1616967-b590-d4a5-bd80-f79c474f54ed",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "description": "ebi-resource",
+            "type": "resources",
+            "uuid": "4284301b-b79f-2ba7-bf94-d9f199181b77",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+      {
+        "uuid": "b1b253b3-3e95-4a48-b134-48f4e8da4f9f",
+        "version": [1, 0, 0]
+      }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"format_version": "1.16.220",
+	"animations": {
+		"animation.shrimp.resistance": {
+			"animation_length": 0.03,
+			"loop": true,
+			"timeline": {
+				"0": "/effect @e[family=wolf_tamed,r=24] resistance 3 2",
+				"0.01": "/effect @a[r=24] resistance 3 2"
+			}
+		}
+	}
+}

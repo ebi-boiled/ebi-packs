@@ -1,0 +1,43 @@
+{
+  "format_version" : "1.10.0",
+  "animation_controllers" : {
+    "controller.animation.shrimp.general" : {
+      "initial_state" : "idling",
+      "states" : {
+        "idling" : {
+          "animations" : [ "idle" ],
+          "transitions" : [
+            {
+              "swimming" : "query.is_swimming"
+            },
+            {
+              "walking" : "query.ground_speed != 0"
+            }
+          ]
+        },
+        "walking" : {
+            "animations" : [ "walk" ],
+            "transitions" : [
+              {
+                "swimming" : "query.is_swimming"
+              },
+              {
+                "idling" : "query.ground_speed == 0"
+              }
+            ]
+        },
+        "swimming" : {
+          "animations" : [ "swim" ],
+          "transitions" : [
+            {
+              "idling" : "!query.is_swimming && (query.ground_speed == 0)"
+            },
+            {
+              "walking" : "!query.is_swimming && (query.ground_speed != 0)"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

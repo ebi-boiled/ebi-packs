@@ -1,0 +1,25 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "マインクラフトの海でエビと戯れよう！",
+    "name": "エビ ビヘイビアー パック",
+    "uuid": "b1b253b3-3e95-4a48-b134-48f4e8da4f9f",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules": [
+    {
+      "description": "ebi-behavior",
+      "type": "data",
+      "uuid": "a3b83e04-a764-4480-9d2a-3c9ce868612f",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a1616967-b590-d4a5-bd80-f79c474f54ed",
+      "version": [1, 0, 0]
+    }
+  ]
+}
+~

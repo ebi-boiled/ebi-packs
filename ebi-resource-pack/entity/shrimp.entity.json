@@ -1,0 +1,34 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ebi:shrimp",
+      "materials": {
+        "default": "stray"
+      },
+      "textures": {
+        "default": "textures/entity/shrimp"
+      },
+      "geometry": {
+        "default": "geometry.shrimp"
+      },
+      "animations": {
+        "idle": "animation.shrimp.idle",
+        "walk": "animation.shrimp.walk",
+        "swim": "animation.shrimp.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.shrimp.general"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.shrimp"
+      ],
+      "spawn_egg": {
+        "base_color": "#ffa0a0",
+        "overlay_color": "#ff4040"
+      }
+    }
+  }
+}
