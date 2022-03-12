@@ -1,8 +1,8 @@
 <p align='center'><b>Minecraft Ebi Packs</b></p>
-<p align='center'><img src="https://user-images.githubusercontent.com/100505058/158007609-a9faa758-0884-43cc-bb26-1c14dae814d1.PNG" width="64" /></p>
+<p align='center'><img src="https://user-images.githubusercontent.com/100505058/158036300-c22283cb-f3e4-4be7-a3d7-9518c5b58858.png" width="64" /></p>
 <p align='center'>マインクラフトの海でエビと戯れよう！</p>
 
-## エビの機能
+## 機能
 
 - [x] スポーンエッグからスポーン
 - [x] 海中で自然スポーン
