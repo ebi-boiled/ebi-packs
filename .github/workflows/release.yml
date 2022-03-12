@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name Get latest tag message
+      - name: Get latest tag message
         id: get_latest_tag_message
         run: |
           tag=$(git tag)
