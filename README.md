@@ -1,17 +1,15 @@
 <p align='center'><b>Minecraft Ebi Packs</b></p>
 <p align='center'><img src="https://user-images.githubusercontent.com/100505058/158036300-c22283cb-f3e4-4be7-a3d7-9518c5b58858.png" width="64" /></p>
-<p align='center'>マインクラフトの海でエビと戯れよう！</p>
+<p align='center'>Play with shrimps in the sea of minecraft!</p>
 
-## 機能
+## Features
 
-- [x] スポーンエッグからスポーン
-- [x] 海中で自然スポーン
-- [ ] アイテムドロップ
-  - [ ] エビを焼く
-- [ ] 子供のエビ
+- [x] Spawn from spawn egg
+- [x] Spawn in the sea
+- [ ] Drop item
+  - [ ] Grilled shrimp
+- [ ] Child shrimp
 
-## 使い方
-
-WIP
+## Installation 
 
 
