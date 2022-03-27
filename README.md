@@ -12,4 +12,4 @@
 
 ## Installation 
 
-
+### <a href="https://github.com/ebi-boiled/ebi-packs/wiki/Installation_iOS">Installation (iOS)</a>
