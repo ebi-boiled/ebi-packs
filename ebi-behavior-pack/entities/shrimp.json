@@ -19,8 +19,6 @@
       },
       "minecraft:jump.static": {
       },
-      "minecraft:can_climb": {
-      },
       "minecraft:movement": {
         "value": 0.12
       },
@@ -49,12 +47,6 @@
       },
       "minecraft:behavior.look_at_player": {
         "look_distance": 3
-      },
-      "minecraft:behavior.flee_sun": {
-        "priority": 1
-      },
-      "minecraft:behavior.restrict_sun": {
-        "priority": 2
       },
       "minecraft:behavior.random_stroll": {
         "priority": 3,
